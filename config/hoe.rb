@@ -12,7 +12,7 @@ EXTRA_DEPENDENCIES = [
 ]
 @config_file = "~/.rubyforge/user-config.yml"
 @config = nil
-RUBYFORGE_USERNAME = ""
+RUBYFORGE_USERNAME = "http://dm-is-paginated.rubyforge.org/"
 def rubyforge_username
   unless @config
     begin
