@@ -7,8 +7,12 @@ module DataMapper
 
       module ClassMethods
         def paginated(options = {})
-          page     = options[:page] ? options.delete(:page).to_i : 1
-          per_page = options[:per_page] ? options.delete(:per_page).to_i : 5
+
+          options[:page] ||= 1
+          options[:per_page] ||= 5
+          
+          page     = options.delete(:page).to_i
+          per_page = options.delete(:per_page).to_i
 
           options.reverse_merge!({
             :order => [:id.desc]
