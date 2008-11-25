@@ -2,8 +2,8 @@ module DataMapper
   module Is
     module Paginated
       VERSION_MAJOR = 0
-      VERSION_MINOR = 0
-      VERSION_TINY  = 1
+      VERSION_MINOR = 1
+      VERSION_TINY  = 0
       VERSION_REV   = nil
 
       VERSION = [
