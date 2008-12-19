@@ -17,15 +17,15 @@ module DataMapper
           options.reverse_merge!({
             :order => [:id.desc]
           })
-
-          page_count = (count(options).to_f / per_page).ceil
+          number_of_records = count(options)
+          page_count = (number_of_records.to_f / per_page).ceil
 
           options.merge!({
             :limit => per_page,
             :offset => (page - 1) * per_page
           })
 
-          [ page_count.to_i , all(options) ]
+          [ number_of_records, page_count.to_i , all(options) ]
         end
       end
     end
