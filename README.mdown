@@ -1,14 +1,14 @@
-= dm-is-paginated
+# dm-is-paginated
 
-http://dm-is-paginated.rubyforge.org
+[http://dm-is-paginated.rubyforge.org](http://dm-is-paginated.rubyforge.org)
 
-== DESCRIPTION:
+## DESCRIPTION:
 
 dm-is-paginated is a simple pagination plugin for DataMapper.
 
 See the website for more details.
 
-== LICENSE:
+## LICENSE:
 
 (The MIT License)
 
